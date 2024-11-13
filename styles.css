@@ -1,0 +1,78 @@
+/* Default light theme */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#value {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.positive {
+  color: green;
+}
+
+.neutral {
+  color: black;
+}
+
+.negative {
+  color: red;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.theme-toggle {
+  margin-top: 1rem;
+  background-color: #888;
+}
+
+/* Dark theme */
+body.dark-theme {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-theme .container {
+  background-color: #1e1e1e;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .btn {
+  background-color: #888;
+  color: #fff;
+}
+
+body.dark-theme .theme-toggle {
+  background-color: #444;
+}
